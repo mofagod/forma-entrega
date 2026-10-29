@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f5">
+  <meta name="description" content="Forma: entrenamiento personal a tu ritmo. Conoce nuestro método, encuentra tu plan y da el primer paso hacia una vida más activa.">
+  <title>Forma — Entrena para vivir mejor</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" type="image/webp"
+        imagesrcset="img/hero-900.webp 900w, img/hero-1200.webp 1200w, img/hero.webp 1600w"
+        imagesizes="(min-width: 1400px) 590px, (min-width: 1000px) 46vw, (min-width: 768px) 44vw, 100vw">
+  <link rel="stylesheet" href="global.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header id="header">
+  <div class="container header-inner">
+    <a class="logo" href="#" aria-label="Forma, inicio"><span class="brand-mark" aria-hidden="true">f.</span>forma<span class="logo-dot">®</span></a>
+    <nav class="nav nav-desktop" id="main-nav" aria-label="Navegación principal">
+      <a href="#beneficios">Beneficios</a>
+      <a href="#metodo">Nuestro método</a>
+      <a href="#historias">Historias</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta nav-cta-desktop" href="#agendar">Agendar una visita</a>
+    <button 
+      id="burger" 
+      aria-label="Abrir menú" 
+      aria-expanded="false" 
+      aria-controls="mobileMenu"
+      class="nav-burger"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<dialog id="mobileMenu" class="menu-overlay" aria-label="Menú principal">
+  <div class="menu-header">
+    <a href="#" class="menu-logo" aria-label="Forma, inicio">
+      <span class="brand-mark" aria-hidden="true">f.</span>forma<span class="logo-dot">®</span>
+    </a>
+    <button id="menuClose" aria-label="Cerrar menú" class="menu-close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="menu-nav">
+    <a href="#beneficios" class="menu-item">Beneficios</a>
+    <a href="#metodo" class="menu-item">Nuestro método</a>
+    <a href="#historias" class="menu-item">Historias</a>
+    <a href="#contacto" class="menu-item">Contacto</a>
+    <div class="menu-accordion" id="menuAccordion">
+      <button 
+        type="button" 
+        class="menu-item menu-accordion-trigger" 
+        id="accordionTrigger" 
+        aria-expanded="false" 
+        aria-controls="menuSubServices"
+      >
+        <span>Servicios y planes</span>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div id="menuSubServices" class="menu-accordion-content" inert>
+        <div class="menu-sub-inner">
+          <div class="menu-sub">
+            <a href="#agendar">Entrenamiento personal</a>
+            <a href="#agendar">Crear un hábito</a>
+            <a href="#agendar">Ganar fuerza y técnica</a>
+            <a href="#agendar">Primera visita sin compromiso</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="menu-cta">
+    <a href="#agendar" class="btn btn-primary btn-full">Agendar una visita</a>
+    <p class="menu-hint">Sin tarjeta. Sin permanencia.</p>
+  </div>
+</dialog>
+<main id="contenido">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="hero-meta">
+          <span class="hero-pill"><span class="status-dot"></span> MENOS EXCUSAS. MÁS VIDA.</span>
+          <span class="meta-sep" aria-hidden="true">•</span>
+          <div class="hero-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Concepto de estudio presencial</span>
+          </div>
+        </div>
+        <h1 class="hero-title">Tu mejor versión<br>empieza a tu<br><em>propio ritmo.</em></h1>
+        <p class="hero-sub">No necesitas vivir en el gimnasio.<br>Necesitas un lugar que entienda tu vida.</p>
+        <p class="hero-detail">Entrenamiento personal, un plan para ti y personas que te acompañan. Aquí, cada pequeño paso cuenta.</p>
+        <a class="btn btn-primary" href="#agendar">Encuentra tu forma</a>
+        <p class="hero-hint"><span aria-hidden="true">✓</span> Primera visita sin compromiso · Sin permanencia</p>
+        <div class="hero-bottom"><span class="mini-symbol" aria-hidden="true">✳</span><p>Más que entrenar.<br><strong>Sentirte bien contigo.</strong></p></div>
+      </div>
+      <div class="hero-image reveal">
+        <picture>
+          <source srcset="img/hero-900.webp 900w, img/hero-1200.webp 1200w, img/hero.webp 1600w"
+                  sizes="(min-width: 1400px) 590px, (min-width: 1000px) 46vw, (min-width: 768px) 44vw, 100vw"
+                  type="image/webp">
+          <img src="img/hero.jpg" alt="Atleta entrenando fuerza con una barra en un gimnasio" width="1600" height="1067" fetchpriority="high" decoding="async">
+        </picture>
+        <span class="photo-label">TU CUERPO. TU PROCESO.</span>
+        <div class="image-note"><span aria-hidden="true">↗</span><div>El primer paso<br><strong>ya es progreso.</strong></div></div>
+        <span class="image-index">01 / ENCUENTRA TU FORMA</span>
+      </div>
+    </div>
+  </section>
+  <div class="manifesto"><div class="container"><span>Un espacio para empezar.</span><span aria-hidden="true">✳</span><span>Un plan para seguir.</span><span aria-hidden="true">✳</span><span>Un hábito para vivir mejor.</span></div></div>
+  <section id="beneficios" class="benefits">
+    <div class="container">
+      <div class="section-heading reveal"><p class="section-eyebrow">01 — HECHO PARA TU VIDA</p><h2>El entrenamiento se adapta a ti.<br><em>Y no al revés.</em></h2><p>Menos complicaciones, más ganas de volver.<br>Así entendemos el movimiento.</p></div>
+      <div class="grid-3 stagger">
+        <article class="card stagger-item"><span class="card-icon" aria-hidden="true">◷</span><h3 class="card-title">Tu tiempo cuenta</h3><p class="card-desc">Sesiones de 45 minutos, bien aprovechadas. Haz espacio para ti sin poner tu día en pausa.</p><span class="card-foot">UN MOMENTO SOLO PARA TI</span></article>
+        <article class="card stagger-item"><span class="card-icon" aria-hidden="true">◎</span><h3 class="card-title">Un plan con tu nombre</h3><p class="card-desc">Partimos de tu nivel y tus objetivos. Adaptamos cada ejercicio para que avances con confianza.</p><span class="card-foot">ACOMPAÑAMIENTO PERSONAL</span></article>
+        <article class="card stagger-item"><span class="card-icon" aria-hidden="true">↗</span><h3 class="card-title">Vienes porque quieres</h3><p class="card-desc">Sin contratos de permanencia. Queremos que te quedes por cómo te sientes cuando sales.</p><span class="card-foot">LIBERTAD PARA ELEGIR</span></article>
+      </div>
+    </div>
+  </section>
+  <section class="trust" id="metodo">
+    <div class="container coach-layout">
+      <div class="coach-image reveal">
+        <picture>
+          <source srcset="img/coach.webp" type="image/webp">
+          <img src="img/coach.jpg" alt="Persona entrenando sobre una esterilla junto a la ventana del estudio" width="1000" height="667" loading="lazy" decoding="async">
+        </picture>
+        <span>ESTAMOS CONTIGO EN CADA REPETICIÓN.</span>
+      </div>
+      <div class="coach-copy"><p class="section-eyebrow">02 — PROGRESAR, EN COMPAÑÍA</p><h2>No tienes que saber<br>por dónde empezar.<br><em>Para eso estamos.</em></h2><p class="coach-description">Un buen entrenamiento empieza escuchándote. Nuestro enfoque combina movimiento, técnica y constancia, sin compararte con nadie.</p><div class="coach-signature"><span class="signature-line"></span> La filosofía de Forma</div>
+        <ol class="steps stagger"><li class="stagger-item"><span class="step-number">01</span><div><h3>Nos conocemos</h3><p>Hablamos de tus objetivos, tu rutina y cómo te sientes.</p></div></li><li class="stagger-item"><span class="step-number">02</span><div><h3>Encontramos tu punto de partida</h3><p>Diseñamos un plan que respete tu nivel y tu ritmo.</p></div></li><li class="stagger-item"><span class="step-number">03</span><div><h3>Avanzamos contigo</h3><p>Ajustamos el camino a medida que vas progresando.</p></div></li></ol>
+      </div>
+    </div>
+  </section>
+  <section id="historias"><div class="container"><div class="section-heading reveal"><p class="section-eyebrow">03 — PEQUEÑOS CAMBIOS, NUEVOS COMIENZOS</p><h2>Cada persona tiene <em>su forma.</em></h2><p>Historias ilustrativas de lo que significa empezar.<br><small>Testimonios ficticios para esta demostración.</small></p></div><div class="grid-2 stagger">
+    <figure class="testimonial stagger-item"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Creía que tenía que estar en forma para ir al gimnasio. Aquí entendí que solo tenía que dar el primer paso.</blockquote><figcaption><picture><source srcset="img/test-1.webp" type="image/webp"><img src="img/test-1.jpg" alt="" width="40" height="40" decoding="async"></picture><div><strong>Lucía M.</strong><span>Volver a empezar · Historia ilustrativa</span></div></figcaption></figure>
+    <figure class="testimonial stagger-item"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Lo que más valoro es tener un plan que cabe en mi día. Dejé de buscar el momento perfecto y encontré mi ritmo.</blockquote><figcaption><picture><source srcset="img/test-2.webp" type="image/webp"><img src="img/test-2.jpg" alt="" width="40" height="40" decoding="async"></picture><div><strong>Andrés R.</strong><span>Crear un hábito · Historia ilustrativa</span></div></figcaption></figure>
+  </div></div></section>
+  <section class="form-section" id="agendar"><div class="container form-wrap"><div class="reveal"><p class="section-eyebrow">04 — EMPIEZA POR UN HOLA</p><h2>Un pequeño paso.<br><em>Muchas posibilidades.</em></h2><p class="form-lead">Ven a conocer el espacio, resolver tus dudas y descubrir cómo podríamos acompañarte.</p><div class="visit-detail"><span aria-hidden="true">↗</span><p>Sin presión. Sin compromiso.<br>Con todas las ganas de conocerte.</p></div><p class="demo-note">Vista de demostración: el formulario valida tus datos, pero no los envía ni reserva una visita.</p></div>
+    <form id="leadForm" class="form" novalidate>
+      <noscript><p>Activa JavaScript para probar el formulario. No se envían datos.</p><style>#leadForm button[type="submit"] { display:none; }</style></noscript>
+      <div class="form-heading"><h3>Agenda tu primera visita</h3><p>Cuéntanos un poco de ti para empezar.</p></div>
+      <div class="field">
+        <label for="name">¿Cómo te llamas? *</label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre" minlength="2" maxlength="100" aria-describedby="name-error">
+        <span class="field-error" id="name-error" aria-live="polite"></span>
+      </div>
+      <div class="form-row-contact">
+        <div class="field">
+          <label for="email">Tu correo electrónico *</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu@correo.com" maxlength="254" aria-describedby="email-error">
+          <span class="field-error" id="email-error" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="phone">Tu WhatsApp <span>(opcional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Ej. 300 000 0000" maxlength="40" aria-describedby="phone-error">
+          <span class="field-error" id="phone-error" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="service">¿Qué servicio te interesa? *</label>
+        <select id="service" name="service" required aria-describedby="service-error">
+          <option value="" disabled selected>Elige tu objetivo o servicio</option>
+          <option value="fuerza">Ganar fuerza y mejorar mi condición</option>
+          <option value="habito">Empezar una rutina de entrenamiento</option>
+          <option value="personal">Recibir entrenamiento personalizado</option>
+          <option value="orientacion">No lo tengo claro, necesito orientación</option>
+        </select>
+        <span class="field-error" id="service-error" aria-live="polite"></span>
+      </div>
+      <div class="field checkbox">
+        <input id="privacy" name="privacy" type="checkbox" required aria-describedby="privacy-error">
+        <label for="privacy">Entiendo que este formulario es una demostración local y he leído la <button class="text-button" type="button" data-privacy>política de privacidad</button>.</label>
+      </div>
+      <span class="field-error full" id="privacy-error" aria-live="polite"></span>
+      <button class="btn btn-primary btn-full" type="submit">Quiero dar el primer paso</button>
+      <p class="form-reassurance">Demostración local: no se envían datos ni se agenda una visita.</p>
+      <div id="form-success" class="form-success" hidden tabindex="-1" role="status" aria-live="polite">
+        <strong>¡Ya diste el primer paso!</strong>
+        <p id="successMessage">La validación de prueba se completó correctamente.</p>
+        <p class="success-note">Esta es una demostración: no se enviaron datos ni se reservó una visita real.</p>
+        <button class="text-button" id="formReset" type="button">Volver al formulario ↗</button>
+      </div>
+    </form>
+  </div></section>
+</main>
+<footer id="contacto"><div class="container"><div class="footer-inner"><div><a class="logo footer-logo" href="#">forma<span class="logo-dot">®</span></a><p class="footer-desc">Movimiento con propósito.<br>Un espacio para sentirte mejor.</p></div><div class="footer-links"><span class="footer-label">NOS ENCONTRAMOS AQUÍ</span><a href="#agendar">Agenda tu primera visita ↗</a><button type="button" class="text-button" data-privacy>Privacidad</button><span class="footer-desc">Datos de contacto y ubicación pendientes de confirmar.</span></div><div class="footer-copy"><span>© <span id="year">2026</span> Forma. Encuentra tu propio ritmo.</span><span>Concepto de estudio · Sitio de demostración</span></div></div></div></footer>
+<dialog id="privacyDialog" aria-labelledby="privacyTitle"><button class="dialog-close" type="button" aria-label="Cerrar política de privacidad">×</button><p class="section-eyebrow">FORMA · PRIVACIDAD</p><h2 id="privacyTitle">Tus datos, con claridad.</h2><p>Este sitio es una demostración local. Los datos solicitados (nombre, correo electrónico, teléfono/WhatsApp opcional y servicio de interés) se utilizan únicamente en tu navegador para comprobar el funcionamiento del formulario. No se envían a un servidor ni se guardan en el almacenamiento del navegador.</p><p>La única finalidad de estos datos en un escenario real es coordinar y agendar tu primera visita guiada. No enviamos spam ni utilizamos cookies o herramientas de seguimiento. Las fotografías y fuentes se sirven desde los archivos locales del proyecto.</p><p>Antes de usar este formulario en un entorno de producción, deben configurarse el responsable legal, los canales de atención y el servicio de envío correspondiente, actualizando esta política conforme a la normativa vigente.</p><button class="btn btn-primary dialog-accept" type="button">Entendido</button></dialog>
+</body>
+</html>
